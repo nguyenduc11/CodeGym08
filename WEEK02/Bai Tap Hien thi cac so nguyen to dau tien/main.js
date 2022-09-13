@@ -1,61 +1,23 @@
-/*let number = parseInt(prompt("Nhập số cần kểm tra"));
-let flag = false;
-
-if (number > 1 ) {
-    for (let i = 2 ; i < number ; i++) {
-        if (number %i == 0) {
-            flag = true;
-            break;
-        }
-    }
-}
-if (flag) {
-    document.write(number + " không là số nguyên tố");
-} else {
-    document.write(number + " là số nguyên tố");
-}*/
-
-
-
-/*
-let check_number = parseInt(prompt("Nhập số lượng cần kểm tra"));
-let flag = false;
-
-for (i_number = 2; i_number <= check_number; i_number++){
-    for (let factor = 2 ; factor <= i_number ; factor++) {
-        document.write(i_number)
-        document.write(factor + " factor" + "<br>")
-        if (i_number %factor == 0) {
-            flag = true;
-
-            break;
-        } else {
+let upperNumber = parseInt(prompt("Kiểm tra số nguyên tố trong ... số đầu tiên"));
+flag = false;
+for (let checkNumber=2 ; checkNumber<= upperNumber ; checkNumber++){
+    console.log("check number=" + checkNumber);
+    for (let factor=2; factor<checkNumber ; factor++) {
+        console.log("factor=" + factor);
+        if (checkNumber % factor === 0) {
+            console.log(checkNumber + " KHÔNG là số nguyên tố");
             flag = false;
-
-        }
-    }
-    if (flag = true) {
-        document.write(i_number + " không là số nguyên tố" + "<br>");
-    } else {
-        document.write(i_number + " là số nguyên tố" + "<br>");
-    }
-}
-*/
-
-
-for (i=1;i<=5;i++){
-    for (j=2;j<i;j++){
-        console.log(i + "&" +j);
-        if (i%j==0){
-            console.log(i + "prime")
+            break;
         } else {
-            console.log(i + "not Prime")
+            console.log(checkNumber + " LÀ số nguyên tố");
+            flag = true;
         }
+    }
+    if (flag == true) {
+        document.write(checkNumber + " is Prime" + "<br>");
+    } else {
+        // document.write(checkNumber + " is NOT Prime" + "<br>");
     }
 }
 
 
-
-// for (i=1;i<=5;i++){
-//     console.log(i);
-// }
