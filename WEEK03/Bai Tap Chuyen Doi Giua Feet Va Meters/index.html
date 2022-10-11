@@ -8,21 +8,26 @@
 </head>
 
 <body>
-    <h1>Convert Feet to Meters</h1>
+    <h1>Convert Foot to Meters</h1>
     <div>
-        <span style="color: red;">1</span>
-        <span> Feet</span>
+        <span id="input_foot" style="color: red;">?</span>
+        <span>Foot</span>
         <span>=</span>
-        <span id="feet_to_meter">1</span>
+        <span id="foot_to_meter">?</span>
         <span>Meter</span>
     </div>
-
     <div>
-        <span style="color: red;">100</span>
+        <input type="button" id="convert_foot_to_meter" value="foot_to_meter" onclick="foot_to_meter()">
+    </div>
+    <div>
+        <span id="input_meter" style="color: red;">?</span>
         <span> Meter</span>
         <span>=</span>
-        <span id="meter_to_feet">100</span>
-        <span>Feet</span>
+        <span id="meter_to_foot">100</span>
+        <span>Foot</span>
+    </div>
+    <div>
+        <input type="button" id="convert_meter_to_foot" value="meter_to_foot" onclick="meter_to_foot()">
     </div>
 </body>
 <script type="text/javascript" src="main.js"></script>
