@@ -1,3 +1,3 @@
 export abstract class Animal {
-  abstract makeSound();
+  abstract makeSound(): any;
 }
